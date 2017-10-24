@@ -5,7 +5,7 @@
   "repository": "SonarSource/sonarqube",
   "license": "LGPL-3.0",
   "dependencies": {
-    "babel-polyfill": "6.23.0",
+    "babel-polyfill": "6.26.0",
     "backbone": "1.2.3",
     "backbone.marionette": "2.4.3",
     "blueimp-md5": "1.1.1",
@@ -42,7 +42,7 @@
     "redux-logger": "2.2.1",
     "redux-thunk": "1.0.2",
     "underscore": "1.8.3",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
     "@types/classnames": "2.2.3",
