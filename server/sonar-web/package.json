@@ -12,12 +12,12 @@
     "classnames": "2.2.5",
     "clipboard": "1.5.5",
     "create-react-class": "15.6.2",
-    "d3-array": "1.1.1",
+    "d3-array": "1.2.1",
     "d3-hierarchy": "1.1.5",
     "d3-scale": "1.0.6",
-    "d3-selection": "1.0.5",
-    "d3-shape": "1.0.6",
-    "date-fns": "1.28.5",
+    "d3-selection": "1.1.0",
+    "d3-shape": "1.2.0",
+    "date-fns": "1.29.0",
     "escape-html": "1.0.3",
     "handlebars": "2.0.0",
     "history": "3.3.0",
@@ -133,19 +133,28 @@
   ],
   "jest": {
     "coverageDirectory": "<rootDir>/target/coverage",
-    "coveragePathIgnorePatterns": ["<rootDir>/node_modules", "<rootDir>/tests"],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules",
+      "<rootDir>/tests"
+    ],
     "mapCoverage": true,
-    "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
     "moduleNameMapper": {
-      "^.+\\.(hbs|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/config/jest/FileStub.js",
+      "^.+\\.(hbs|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/FileStub.js",
       "^.+\\.css$": "<rootDir>/config/jest/CSSStub.js"
     },
     "setupFiles": [
       "<rootDir>/config/polyfills.js",
       "<rootDir>/config/jest/SetupTestEnvironment.js"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules",
       "<rootDir>/src/main/webapp",
