@@ -5868,15 +5868,7 @@ redux-thunk@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-1.0.2.tgz#5911e5a25dab2649d860b0f1eeac261c9d130ece"
 
-redux@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-3.3.1.tgz#716df8004786deaf01c93ae396c84fc1041e424b"
-  dependencies:
-    lodash "^4.2.1"
-    lodash-es "^4.2.1"
-    loose-envify "^1.1.0"
-
-redux@^3.6.0:
+redux@3.7.2, redux@^3.6.0:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
   dependencies:
