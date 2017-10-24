@@ -9,12 +9,12 @@
     "backbone": "1.2.3",
     "backbone.marionette": "2.4.3",
     "blueimp-md5": "1.1.1",
-    "classnames": "2.2.0",
+    "classnames": "2.2.5",
     "clipboard": "1.5.5",
-    "create-react-class": "15.6.0",
+    "create-react-class": "15.6.2",
     "d3-array": "1.1.1",
-    "d3-hierarchy": "1.1.4",
-    "d3-scale": "1.0.5",
+    "d3-hierarchy": "1.1.5",
+    "d3-scale": "1.0.6",
     "d3-selection": "1.0.5",
     "d3-shape": "1.0.6",
     "date-fns": "1.28.5",
@@ -45,7 +45,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
-    "@types/classnames": "2.2.0",
+    "@types/classnames": "2.2.3",
     "@types/d3-array": "1.2.1",
     "@types/d3-scale": "1.0.10",
     "@types/date-fns": "2.6.0",
@@ -76,10 +76,10 @@
     "babel-plugin-transform-react-constant-elements": "^6.22.0",
     "babel-plugin-transform-react-jsx-self": "^6.22.0",
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
-    "babel-preset-env": "^1.1.8",
+    "babel-preset-env": "1.6.1",
     "babel-preset-react": "^6.22.0",
     "chalk": "1.1.3",
-    "css-loader": "0.28.4",
+    "css-loader": "0.28.7",
     "enzyme": "2.9.1",
     "enzyme-to-json": "1.5.1",
     "eslint": "4.9.0",
@@ -105,7 +105,7 @@
     "style-loader": "0.18.2",
     "ts-jest": "20.0.10",
     "typescript": "2.5.3",
-    "typescript-eslint-parser": "8.0.0",
+    "typescript-eslint-parser": "8.0.1",
     "webpack": "2.6.1",
     "webpack-bundle-analyzer": "2.8.2",
     "webpack-dev-server": "2.4.5"
@@ -133,28 +133,19 @@
   ],
   "jest": {
     "coverageDirectory": "<rootDir>/target/coverage",
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/node_modules",
-      "<rootDir>/tests"
-    ],
+    "coveragePathIgnorePatterns": ["<rootDir>/node_modules", "<rootDir>/tests"],
     "mapCoverage": true,
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js", "json"],
     "moduleNameMapper": {
-      "^.+\\.(hbs|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/FileStub.js",
+      "^.+\\.(hbs|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/config/jest/FileStub.js",
       "^.+\\.css$": "<rootDir>/config/jest/CSSStub.js"
     },
     "setupFiles": [
       "<rootDir>/config/polyfills.js",
       "<rootDir>/config/jest/SetupTestEnvironment.js"
     ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules",
       "<rootDir>/src/main/webapp",
