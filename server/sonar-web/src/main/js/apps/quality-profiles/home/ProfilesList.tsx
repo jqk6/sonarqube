@@ -80,9 +80,7 @@ export default class ProfilesList extends React.PureComponent<Props> {
       profile => profile.language
     );
 
-    const profilesToShow: { [language: string]: Profile[] } = language
-      ? pick(profilesIndex, language)
-      : profilesIndex;
+    const profilesToShow = language ? pick(profilesIndex, language) : profilesIndex;
 
     const languagesToShow = sortBy(Object.keys(profilesToShow));
 
@@ -102,11 +100,11 @@ export default class ProfilesList extends React.PureComponent<Props> {
           <div key={languageKey} className="boxed-group boxed-group-inner quality-profiles-table">
             <table data-language={languageKey} className="data zebra zebra-hover">
               {profilesToShow[languageKey] != null &&
-                this.renderHeader(languageKey, profilesToShow[languageKey].length)}
+                this.renderHeader(languageKey, profilesToShow[languageKey]!.length)}
 
               <tbody>
                 {profilesToShow[languageKey] != null &&
-                  this.renderProfiles(profilesToShow[languageKey])}
+                  this.renderProfiles(profilesToShow[languageKey]!)}
               </tbody>
             </table>
           </div>

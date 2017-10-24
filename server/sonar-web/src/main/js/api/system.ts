@@ -22,7 +22,7 @@ import throwGlobalError from '../app/utils/throwGlobalError';
 
 export type SysValue = boolean | string | number | HealthType | SysValueObject | SysValueArray;
 export interface SysValueObject {
-  [key: string]: SysValue;
+  [key: string]: SysValue | undefined;
 }
 export interface SysValueArray extends Array<SysValue> {}
 

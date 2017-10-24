@@ -63,7 +63,7 @@ function ObjectItem({ value }: { value: SysValueObject }) {
           <tr key={name}>
             <td className="thin nowrap">{name}</td>
             <td>
-              <SysInfoItem name={name} value={value} />
+              <SysInfoItem name={name} value={value!} />
             </td>
           </tr>
         ))}

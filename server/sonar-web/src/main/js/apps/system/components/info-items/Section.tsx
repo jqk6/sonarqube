@@ -40,7 +40,7 @@ export default function Section({ name, items }: Props) {
                   <div className="system-info-section-item-name">{name}</div>
                 </td>
                 <td style={{ wordBreak: 'break-all' }}>
-                  <SysInfoItem name={name} value={value} />
+                  <SysInfoItem name={name} value={value!} />
                 </td>
               </tr>
             );
